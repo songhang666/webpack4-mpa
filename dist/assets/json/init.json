@@ -1,0 +1,236 @@
+{
+  "code": 0,
+  "msg": "ok",
+  "data": {
+    "userInfo": {
+      "userId": "3385151",
+      "name": "张祝彦",
+      "level": 0,
+      "sex": "1",
+      "mobile": "185****2164",
+      "mobile_num": "18500132164"
+    },
+    "myList": [],
+    "times": 1,
+    "shareTitle": "lkjlsakdflsakjd",
+    "shareLink": "http://www.baidu.com&sc=bfe1768b2b24a42f179237317a15ec9c",
+    "shareContent": "ojojpoijpoij",
+    "shareImg": "http://test22.sparow.firstp2plocal.com/static/upload/d0249b4e455cad325e4a5e58b76d092f1547799587.jpg",
+    "shareAppId": "wx6c38b0b70ff6baf9",
+    "shareNonceStr": "de81eeb550374a228c2b3e65410685e7",
+    "shareTimeStamp": 1548164948,
+    "isShared": false,
+    "shareSign": "881b1c0a3b8645c63d2d923f84b09450c0d60465",
+    "question": [
+      {
+        "question": {
+          "id": "10837",
+          "content": "到处碰壁（打《论语》一句）"
+        },
+        "options": [
+          {
+            "id": "29789",
+            "content": "守则有余"
+          },
+          {
+            "id": "29787",
+            "content": "不得其门而入"
+          },
+          {
+            "id": "29788",
+            "content": "我无言责之"
+          },
+          {
+            "id": "29786",
+            "content": "良将随之"
+          }
+        ]
+      },
+      {
+        "question": {
+          "id": "10892",
+          "content": "坚决煞住吃喝风（打《滕王阁序》一句）"
+        },
+        "options": [
+          {
+            "id": "30009",
+            "content": "齐之以武"
+          },
+          {
+            "id": "30007",
+            "content": "言必有中"
+          },
+          {
+            "id": "30008",
+            "content": "盛筵难再"
+          },
+          {
+            "id": "30006",
+            "content": "慎言其余"
+          }
+        ]
+      },
+      {
+        "question": {
+          "id": "10896",
+          "content": "帝子乘风下翠微（打《滕王阁序》一句）"
+        },
+        "options": [
+          {
+            "id": "30025",
+            "content": "烈士润名"
+          },
+          {
+            "id": "30022",
+            "content": "上出重霄"
+          },
+          {
+            "id": "30023",
+            "content": "信而不疑"
+          },
+          {
+            "id": "30024",
+            "content": "故合之以交"
+          }
+        ]
+      },
+      {
+        "question": {
+          "id": "10958",
+          "content": "共同走江湖（打山西一地名）"
+        },
+        "options": [
+          {
+            "id": "30272",
+            "content": "谢通门"
+          },
+          {
+            "id": "30273",
+            "content": "洪洞"
+          },
+          {
+            "id": "30271",
+            "content": "鱼台"
+          },
+          {
+            "id": "30270",
+            "content": "曲水"
+          }
+        ]
+      },
+      {
+        "question": {
+          "id": "11036",
+          "content": "惩恶扬善（打云南一地名）"
+        },
+        "options": [
+          {
+            "id": "30584",
+            "content": "宜良"
+          },
+          {
+            "id": "30585",
+            "content": "个旧"
+          },
+          {
+            "id": "30583",
+            "content": "屯昌"
+          },
+          {
+            "id": "30582",
+            "content": "洪洞"
+          }
+        ]
+      }
+    ],
+    "questionTotal": 5,
+    "answerList": [
+
+    ],
+    "answerRightCnt": 0,
+    "answerWrongCnt": 0,
+    "isLastOne": false,
+    "isAnswerRight": false,
+    "rightIds": [],
+    "isNoPrize": false,
+    "isBind": false,
+    "prizeList": {
+      "p3": [
+        {
+          "id": "315",
+          "game_id": "138",
+          "goods_id": "141",
+          "check_count": "0",
+          "count": "0",
+          "current_count": "0",
+          "image": "http://test22.sparow.firstp2plocal.com/static/upload/d262c202674e57ac62e9f9968bdacb9e1548128471.png",
+          "index": "",
+          "level": "0",
+          "rule_id": "0",
+          "rule_param": "null",
+          "desc": "加息券0.8%",
+          "create_time": "1547799639",
+          "update_time": "1548064785",
+          "name": "加息券0.8",
+          "prize": "0.80",
+          "key": "discount_1",
+          "gid": "141",
+          "decimalPlace": "2"
+        }
+      ],
+      "p4": [
+        {
+          "id": "319",
+          "game_id": "138",
+          "goods_id": "140",
+          "check_count": "0",
+          "count": "0",
+          "current_count": "0",
+          "image": "http://test22.sparow.firstp2plocal.com/static/upload/4af42179041aab7b671240e7467521a31548128492.png",
+          "index": "",
+          "level": "0",
+          "rule_id": "0",
+          "rule_param": "null",
+          "desc": "投资券20.19元",
+          "create_time": "1548064785",
+          "update_time": "1548064785",
+          "name": "投资券20.19",
+          "prize": "20.19",
+          "key": "discount_0",
+          "gid": "140",
+          "decimalPlace": "2"
+        }
+      ],
+      "p5": [
+        {
+          "id": "320",
+          "game_id": "138",
+          "goods_id": "139",
+          "check_count": "0",
+          "count": "0",
+          "current_count": "0",
+          "image": "http://test22.sparow.firstp2plocal.com/static/upload/f73f35d25dd891e4d24f3f6ae766dba31548128506.png",
+          "index": "",
+          "level": "0",
+          "rule_id": "0",
+          "rule_param": "null",
+          "desc": "投资券201.9元",
+          "create_time": "1548064785",
+          "update_time": "1548064785",
+          "name": "投资券201.9",
+          "prize": "201.90",
+          "key": "discount_0",
+          "gid": "139",
+          "decimalPlace": "2"
+        }
+      ]
+    },
+    "prizeOrder": [
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "isSurprise": 1,
+    "pCode": "b5154ba51ed1a61d09d3e3a8bb7d54a4"
+  }
+}

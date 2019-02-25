@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "../../assets/css/_app";
+@import "../../assets/css/common";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    //overflow: hidden;
+    font-family: ”Microsoft YaHei”, Arial, Helvetica, sans-serif, ”宋体”;
+}
+
+#pageContainer {
+    width: 100%;
+    height: 100%;
+    #relive {
+        width: 100%;
+        height: 100%;
+        background: url("../../assets/image/home.png") no-repeat center center;
+        background-size: 100% 100%;
+        overflow: hidden;
+        .btns {
+            margin-top: 11.5rem;
+            .help {
+                @include px2rem(width, 236);
+                @include px2rem(height, 113);
+                background: url("../../assets/image/help-relive.png") no-repeat center center;
+                background-size: 100% 100%;
+                margin: 0 auto;
+            }
+            .play {
+                display: block;
+                @include px2rem(width, 236);
+                @include px2rem(height, 113);
+                background: url("../../assets/image/play-again.png") no-repeat center center;
+                background-size: 100% 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

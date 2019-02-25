@@ -1,0 +1,132 @@
+{
+  "code": 0,
+  "msg": "ok",
+  "data": {
+    "userInfo": {
+      "userId": "2066470",
+      "name": "m14510390899",
+      "level": 6,
+      "sex": "0",
+      "mobile": "145****0899",
+      "mobile_num": "14510390899"
+    },
+    "myList": [
+      {
+        "createTime": "2019-01-30 15:22:40",
+        "createTimeStamp": "1548832960",
+        "data": {
+          "name": "投资券201.9",
+          "info": {
+            "token": "",
+            "discoutGroupId": "12"
+          },
+          "userName": "145****0899",
+          "prize": "201.90",
+          "prizeData": {
+            "goldCoin": 0,
+            "groupName": "p5",
+            "userkey": "5f60f6b2b36992fccd090c7735e13ab836101053adc398dea6775f19c570d1ac"
+          }
+        },
+        "prizeId": "320",
+        "goodsId": "139",
+        "image": "http:\/\/test22.sparow.firstp2plocal.com\/static\/upload\/f73f35d25dd891e4d24f3f6ae766dba31548128506.png",
+        "desc": "投资券201.9元",
+        "key": "discount_0",
+        "prize": "201.90"
+      },
+      {
+        "createTime": "2019-02-14 13:11:56",
+        "createTimeStamp": "1550121116",
+        "data": {
+          "name": "投资券201.9",
+          "info": {
+            "token": "",
+            "discoutGroupId": "1758"
+          },
+          "userName": "145****0899",
+          "prize": "201.90",
+          "prizeData": {
+            "goldCoin": 0,
+            "groupName": "p5",
+            "userkey": "a51d373ec74b38d61f88c5cb99098992ea65b13a8e2f2a05380a190feefde5f4"
+          }
+        },
+        "prizeId": "320",
+        "goodsId": "139",
+        "image": "http:\/\/test22.sparow.firstp2plocal.com\/static\/upload\/f73f35d25dd891e4d24f3f6ae766dba31548128506.png",
+        "desc": "投资券201.9元",
+        "key": "discount_0",
+        "prize": "201.90"
+      }
+    ],
+    "times": 0,
+    "shareTitle": "",
+    "shareLink": "",
+    "shareContent": "",
+    "shareImg": "",
+    "shareAppId": "",
+    "shareNonceStr": "",
+    "shareTimeStamp": "",
+    "isShared": false,
+    "shareSign": "",
+    "question": [],
+    "questionTotal": 0,
+    "answerList": [],
+    "answerRightCnt": 0,
+    "answerWrongCnt": 0,
+    "isLastOne": false,
+    "isAnswerRight": false,
+    "rightIds": [],
+    "isNoPrize": false,
+    "prizeList": [],
+    "prizeOrder": [],
+    "awardInfo": {
+      "id": "564320",
+      "discountGroupId": 1758,
+      "ownerUserId": 2066470,
+      "status": 1,
+      "isDelete": 0,
+      "useStartTime": 1550121211,
+      "useEndTime": 1555343999,
+      "createTime": 1550121211,
+      "updateTime": 1550121211,
+      "dealLoadId": 0,
+      "couponToken": "12811497185c64f89c8cf9815501211165770",
+      "goodsType": "2",
+      "goodsLimit": "15552000",
+      "goodsPrice": "201.900",
+      "fromDealLoadId": 0,
+      "siteId": "1",
+      "type": "1",
+      "wxUserId": 0,
+      "givenStatus": "1",
+      "name": "猜灯谜p5",
+      "isAcquired": 0
+    },
+    "prizeInfo": {
+      "id": "320",
+      "game_id": "138",
+      "goods_id": "139",
+      "check_count": "0",
+      "count": "0",
+      "current_count": "0",
+      "image": "http:\/\/test22.sparow.firstp2plocal.com\/static\/upload\/f73f35d25dd891e4d24f3f6ae766dba31548128506.png",
+      "index": "",
+      "level": "0",
+      "rule_id": "0",
+      "rule_param": "null",
+      "desc": "投资券201.9元",
+      "create_time": "1548064785",
+      "update_time": "1548334559",
+      "name": "投资券201.9",
+      "prize": "201.90",
+      "key": "discount_0",
+      "gid": "139",
+      "decimalPlace": "2"
+    },
+    "isSurprise": 1,
+    "prizeIndex": "p5",
+    "pCode": "5aa79b51a464ac4ab842cd13b205e3a3"
+  }
+}

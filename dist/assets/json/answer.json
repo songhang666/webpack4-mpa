@@ -1,0 +1,67 @@
+{
+  "code": 0,
+  "msg": "ok",
+  "data": {
+    "isBind": true,
+    "userInfo": {
+      "userId": "3385945",
+      "name": "张祝彦",
+      "level": 0,
+      "sex": "1",
+      "mobile": "185****2164",
+      "mobile_num": "18500132164"
+    },
+    "myList": [],
+    "times": 1,
+    "shareTitle": "",
+    "shareLink": "",
+    "shareContent": "",
+    "shareImg": "",
+    "shareAppId": "",
+    "shareNonceStr": "",
+    "shareTimeStamp": "",
+    "isShared": true,
+    "shareSign": "",
+    "question": [],
+    "questionTotal": 0,
+    "answerList": [
+      {
+        "answer": "30077",
+        "isTrue": true,
+        "questionId": "10909"
+      },
+      {
+        "answer": "30035",
+        "isTrue": true,
+        "questionId": "10899"
+      },
+      {
+        "answer": "29772",
+        "isTrue": false,
+        "questionId": "10833"
+      },
+      {
+        "answer": "30077",
+        "isTrue": true,
+        "questionId": "10909"
+      },
+      {
+        "answer": "30077",
+        "isTrue": true,
+        "questionId": "10909"
+      }
+    ],
+    "answerRightCnt": 0,
+    "answerWrongCnt": 0,
+    "isLastOne": false,
+    "isAnswerRight": false,
+    "rightIds": [
+      "30200"
+    ],
+    "isNoPrize": false,
+    "prizeList": [],
+    "prizeOrder": [],
+    "isSurprise": 0,
+    "pCode": "3d332f1800b48552be83edfcb07c1e69"
+  }
+}

@@ -1,0 +1,23 @@
+{{each model}}
+    <div class="swiper-slide">
+        <div class="question-background">
+            <p>{{$value.question.content}}</p>
+        </div>
+        <img src="../../assets/image/serial_number{{$index+1}}.png">
+        <div class="answer-wrapper-mask"></div>
+        <ul class="answer-wrapper clear">
+            <li class="fl answerA" data-index="A" data-questionid="{{$value.question.id}}"
+                data-optionid="{{$value.options[0].id}}">{{$value.options[0].content}}
+            </li>
+            <li class="fl answerB" data-index="B" data-questionId="{{$value.question.id}}"
+                data-optionid="{{$value.options[1].id}}">{{$value.options[1].content}}
+            </li>
+            <li class="fl answerC" data-index="C" data-questionId="{{$value.question.id}}"
+                data-optionid="{{$value.options[2].id}}">{{$value.options[2].content}}
+            </li>
+            <li class="fl answerD" data-index="D" data-questionId="{{$value.question.id}}"
+                data-optionid="{{$value.options[3].id}}">{{$value.options[3].content}}
+            </li>
+        </ul>
+    </div>
+{{/each}}

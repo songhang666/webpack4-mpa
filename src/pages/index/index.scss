@@ -1,0 +1,461 @@
+@charset "UTF-8";
+@import "../../assets/css/_app";
+@import "../../assets/css/common";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  //overflow: hidden;
+  font-family: ”Microsoft YaHei”, Arial, Helvetica, sans-serif, ”宋体”;
+}
+
+#pageContainer {
+  width: 100%;
+  height: 100%;
+  #home {
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/image/home.png") no-repeat center center;
+    background-size: 100% 100%;
+    .go-riddle {
+      @include px2rem(width, 35);
+      @include px2rem(height, 290);
+      @include px2rem(line-height, 50);
+      font-size: 0.4rem;
+      text-align: center;
+      color: #ffffff;
+      position: absolute;
+      left: 48.5%;
+      top: 62%;
+    }
+    .rule-btn {
+      @include px2rem(width, 236);
+      @include px2rem(height, 113);
+      background: url("../../assets/image/btn_rule.png") no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+      @include px2rem(left, 13);
+      @include px2rem(bottom, 13)
+    }
+  }
+  #ruleMask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    .content {
+      @include px2rem(width, 630);
+      height: 13.66rem;
+      background: url("../../assets/image/pupup.png") no-repeat center center;
+      background-size: 100% 100%;
+      z-index: 1;
+      margin: 10% auto;
+      overflow: auto;
+      .items {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 58%;
+        .date {
+          padding-left: 0.2rem;
+          font-size: 0.3rem;
+          .day {
+            color: #f13856;
+          }
+          .hour {
+            color: #f13856;
+          }
+        }
+        .item {
+          width: 6.24rem;
+          height: 6.513333rem;
+          list-style: none;
+          li {
+            margin-top: 0.2rem;
+            line-height: 0.6rem;
+            span:first-child {
+              display: inline-block;
+              @include px2rem(width, 37);
+              @include px2rem(height, 37);
+              @include px2rem(line-height, 37);
+              border-radius: 50%;
+              text-align: center;
+              background: #f13856;
+              margin-right: 0.1rem;
+              color: #ffffff;
+              font-size: 0.35rem;
+            }
+            span:last-child {
+              width: 87.4%;
+              font-size: 0.27rem;
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+        }
+      }
+      .back-btn {
+        @include px2rem(width, 261);
+        @include px2rem(height, 90);
+        background: url("../../assets/image/btn_back.png") no-repeat center center;
+        background-size: 100% 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+  #play {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url("../../assets/image/game_bg.png") no-repeat center center;
+    background-size: 100% 100%;
+    .lantern-wrapper {
+      width: 92%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        @include px2rem(height, 852);
+      }
+    }
+    .serial-number {
+      position: absolute;
+      @include px2rem(top, 38);
+      @include px2rem(right, 0);
+      @include px2rem(width, 156);
+      @include px2rem(height, 228);
+      img {
+        @include px2rem(width, 156);
+        @include px2rem(height, 228);
+      }
+
+    }
+    .prompt-wrapper {
+      @include px2rem(width, 182);
+      @include px2rem(height, 125);
+      position: absolute;
+      @include px2rem(left, 6);
+      bottom: 3.133333rem;
+      img {
+        @include px2rem(width, 182);
+        @include px2rem(height, 125);
+      }
+      img[src = ""] {
+        opacity: 0;
+      }
+    }
+    .count-bar {
+      @include px2rem(width, 150);
+      @include px2rem(height, 30);
+      position: absolute;
+      right: 0.606667rem;
+      bottom: 1.733333rem;
+      p {
+        width: 50%;
+        @include px2rem(height, 26);
+        font-size: 0.33rem;
+        &.true {
+          color: #ffffff;
+        }
+        &.false {
+          color: #cd4e6a;
+        }
+      }
+    }
+    .btn-next {
+      @include px2rem(width, 220);
+      @include px2rem(height, 113);
+      background: url("../../assets/image/btn_next.png") no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+      @include px2rem(right, 14);
+      @include px2rem(bottom, 9);
+    }
+    .swiper-container {
+      width: 95%;
+      height: 87%;
+      .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .question-background {
+          width: 100%;
+          height: 10.873333rem;
+          overflow: hidden;
+          background: url("../../assets/image/lantern_yes.png") no-repeat center center;
+          background-size: 100% 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          p {
+            width: 4.066667rem;
+            font-size: 0.45rem;
+            text-align: center;
+            font-weight: bold;
+            line-height: 0.7rem;
+            color: #ffffff;
+            margin: 1.7rem auto 0 auto;
+          }
+        }
+        img {
+          position: absolute;
+          top: 0.706667rem;
+          @include px2rem(right, 0);
+          @include px2rem(width, 156);
+          @include px2rem(height, 228);
+        }
+        .answer-wrapper-mask {
+          display: none;
+          width: 5.8rem;
+          height: 4.066666667rem;
+          position: absolute;
+          top: 9.806667rem;
+          left: 2.106667rem;
+          z-index: 100000;
+        }
+        .answer-wrapper {
+          width: 5.8rem;
+          height: 4.066666667rem;
+          position: absolute;
+          top: 9.806667rem;
+          left: 2.106667rem;
+          z-index: 99999;
+          li {
+            list-style: none;
+            @include px2rem(width, 90);
+            @include px2rem(height, 305);
+            margin-right: 0.25rem;
+            padding: 1.166667rem 0.366667rem 0.866667rem 0.366667rem;
+            text-align: center;
+            font-size: 0.32rem;
+            color: #b97429;
+            &.answerA {
+              background: url("../../assets/image/answer-a.png") no-repeat center center;
+              background-size: 100% 100%;
+            }
+            &.answerB {
+              background: url("../../assets/image/answer-b.png") no-repeat center center;
+              background-size: 100% 100%;
+            }
+            &.answerC {
+              background: url("../../assets/image/answer-c.png") no-repeat center center;
+              background-size: 100% 100%;
+            }
+            &.answerD {
+              background: url("../../assets/image/answer-d.png") no-repeat center center;
+              background-size: 100% 100%;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  #revivalMask {
+    img {
+      @include px2rem(width, 404);
+      @include px2rem(height, 208);
+      position: absolute;
+      @include px2rem(top, 44);
+      right: 0.813333rem;
+    }
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    .content {
+      margin-top: 5.6rem;
+      .tip-p {
+        width: 7.066667rem;
+        @include px2rem(height, 30);
+        margin: 5.6rem auto 0 auto;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 0.39rem;
+      }
+      div {
+        width: 6.66rem;
+        height: 1.333333rem;
+        font-size: 0.5rem;
+        text-align: center;
+        color: #f3bb3a;
+        margin: 0.9rem auto 0 auto;
+        &.second {
+          margin: 0 auto;
+        }
+      }
+      .close-mask {
+        display: block;
+        @include px2rem(width, 105);
+        @include px2rem(height, 105);
+        background: url("../../assets/image/close.png") no-repeat center center;
+        background-size: 100% 100%;
+        margin: 1.2rem auto 0 auto;
+      }
+      .share-bar {
+        width: 100%;
+        @include px2rem(height, 200);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        a {
+          display: inline-block;
+          @include px2rem(height, 200);
+          width: 49.5%;
+          &.friend {
+            background: url("../../assets/image/friend.png") no-repeat center center;
+            background-size: 100% 100%;
+            border-right: 2px dashed #666;
+          }
+          &.time-line {
+            background: url("../../assets/image/quan.png") no-repeat center center;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+  #result {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    background: url("../../assets/image/result_bg.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    .lantern-wrapper {
+      position: relative;
+      width: 100%;
+      height: 5.866667rem;
+      img {
+        position: absolute;
+        @include px2rem(width, 151);
+        @include px2rem(height, 330);
+        &.one {
+          top: 0.466667rem;
+          left: 0.6rem;
+        }
+        &.two {
+          top: 1.1rem;
+          left: 2.266667rem;
+        }
+        &.three {
+          top: 1.333333rem;
+          left: 3.9rem;
+          z-index: 999;
+        }
+        &.four {
+          top: 1.1rem;
+          left: 5.6rem;
+          z-index: 99;
+        }
+        &.five {
+          top: 0.466667rem;
+          left: 7.3rem;
+        }
+      }
+    }
+    .challenge-failure {
+      display: none;
+      text-align: center;
+      p:first-child {
+        color: #ffffff;
+        font-size: 0.5rem;
+        margin: 0.5rem 0 0.7rem 0;
+      }
+      p:last-child {
+        color: #f8bf3b;
+        font-size: 0.8rem;
+      }
+    }
+    .challenge-success {
+      display: none;
+      text-align: center;
+      .bind-phone-wrapper {
+        display: none;
+        p {
+          color: #f8bf3b;
+          font-size: 0.3rem;
+          margin-bottom: 0.2rem;
+        }
+        input {
+          @include px2rem(width, 489);
+          @include px2rem(height, 68);
+          text-align: center;
+        }
+        .bind-phone {
+          @include px2rem(width, 347);
+          @include px2rem(height, 113);
+          @include px2rem(line-height, 113);
+          background: url("../../assets/image/bind-false.png") no-repeat center center;
+          background-size: 100% 100%;
+          margin: 4% auto;
+          outline: none;
+          border: none;
+        }
+        .can-bind {
+          background: url("../../assets/image/bind_phone.png") no-repeat center center;
+          background-size: 100% 100%;
+        }
+      }
+      .get-prize {
+        display: none;
+        p {
+          color: #f8bf3b;
+          font-size: 0.3rem;
+          margin-bottom: 0.2rem;
+          span {
+            font-size: 0.3rem;
+            color: #f8bf3b;
+          }
+        }
+        .receive {
+          @include px2rem(width, 258);
+          @include px2rem(height, 113);
+          @include px2rem(line-height, 113);
+          background: url("../../assets/image/get-prize.png") no-repeat center center;
+          background-size: 100% 100%;
+          margin: 4% auto;
+          outline: none;
+          border: none;
+        }
+      }
+      #tipMessage {
+        display: none;
+        font-size: 0.3rem;
+        color: #f8bf3b;
+        span {
+          font-size: 0.3rem;
+          color: #f8bf3b;
+        }
+      }
+      #titleDes {
+        color: #ffffff;
+        font-size: 0.5rem;
+        margin: 0.5rem 0 0 0;
+        span {
+          font-size: 0.5rem;
+          color: #f8bf3b;
+        }
+      }
+      img {
+        @include px2rem(width, 516);
+        @include px2rem(height, 400);
+      }
+    }
+  }
+}
